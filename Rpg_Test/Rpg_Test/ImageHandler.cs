@@ -29,7 +29,7 @@ namespace Rpg_Test
         public bool IsActive;
 
         public FadeEffect FadeEffect;
-
+        public SpriteSheetEffect SpriteSheetEffect;
 
         void SetEffect<T>(ref T effect)
         {
@@ -120,6 +120,7 @@ namespace Rpg_Test
             ScreenManager.Instance.GraphicsDevice.SetRenderTarget(null);
 
             SetEffect<FadeEffect>(ref FadeEffect);
+            SetEffect<SpriteSheetEffect>(ref SpriteSheetEffect);
 
             if (Effects != String.Empty)
             {
