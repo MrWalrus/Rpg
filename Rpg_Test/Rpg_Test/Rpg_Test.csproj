@@ -135,7 +135,9 @@
   <ItemGroup>
     <Content Include="Game.ico" />
     <Content Include="GameThumbnail.png" />
-    <Content Include="Load\Game\Maps\Map_One.xml" />
+    <Content Include="Load\Game\Maps\Map_One.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Load\Game\Player.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

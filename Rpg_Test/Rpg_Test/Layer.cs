@@ -20,7 +20,7 @@ namespace Rpg_Test
             }
         }
 
-        public TileMap TileMap;
+       // public TileMap TileMap;
         List<Tile> tiles;
 
         public Layer()
