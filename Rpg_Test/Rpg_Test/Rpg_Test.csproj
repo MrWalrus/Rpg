@@ -116,6 +116,8 @@
     <Compile Include="ImageEffect.cs" />
     <Compile Include="ImageHandler.cs" />
     <Compile Include="InputManager.cs" />
+    <Compile Include="Layer.cs" />
+    <Compile Include="Map.cs" />
     <Compile Include="MenuManager.cs" />
     <Compile Include="Menu.cs" />
     <Compile Include="MenuItem.cs" />
@@ -126,12 +128,14 @@
     <Compile Include="ScreenManager.cs" />
     <Compile Include="SplashScreen.cs" />
     <Compile Include="SpriteSheetEffect.cs" />
+    <Compile Include="Tile.cs" />
     <Compile Include="TitleScreen.cs" />
     <Compile Include="XmlManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Game.ico" />
     <Content Include="GameThumbnail.png" />
+    <Content Include="Load\Game\Maps\Map_One.xml" />
     <Content Include="Load\Game\Player.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
