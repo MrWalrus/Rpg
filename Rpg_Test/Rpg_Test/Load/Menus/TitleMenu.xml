@@ -25,6 +25,8 @@
     </Item>
       
     <Item>
+      <LinkType>Menu</LinkType>
+      <LinkID>Load/Menus/TestMenu.xml</LinkID>
     <Image>
       <Text>Durp</Text>
     </Image>

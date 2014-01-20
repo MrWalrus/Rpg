@@ -36,12 +36,12 @@ namespace Rpg_Test
            // if (Velocity.X == 0)no diag
             //{
             Image.IsActive = true;
-            if (InputManager.Instance.KeyDown(Keys.S))
+            if (InputManager.Instance.KeyDown(Keys.S) || InputManager.Instance.KeyDown(Keys.Down))
             {
                 Velocity.Y = MoveSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds;
                 Image.SpriteSheetEffect.CurrentFrame.Y = 0;
             }
-            else if (InputManager.Instance.KeyDown(Keys.W))
+            else if (InputManager.Instance.KeyDown(Keys.W) || InputManager.Instance.KeyDown(Keys.Up))
             {
                 Velocity.Y = -MoveSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds;
                 Image.SpriteSheetEffect.CurrentFrame.Y = 3;
@@ -53,12 +53,12 @@ namespace Rpg_Test
 
           //  if (Velocity.Y == 0)no diag
           //  {
-                if (InputManager.Instance.KeyDown(Keys.A))
+                if (InputManager.Instance.KeyDown(Keys.A) || InputManager.Instance.KeyDown(Keys.Left))
                 {
                     Velocity.X = -MoveSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds;
                     Image.SpriteSheetEffect.CurrentFrame.Y = 1;
                 }
-                else if (InputManager.Instance.KeyDown(Keys.D))
+                else if (InputManager.Instance.KeyDown(Keys.D) || InputManager.Instance.KeyDown(Keys.Right))
                 {
                     Velocity.X = MoveSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds;
                     Image.SpriteSheetEffect.CurrentFrame.Y = 2;
